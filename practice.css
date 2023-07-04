@@ -1,0 +1,552 @@
+/*common reset code start here*/
+.root{
+    --primary-color: rgb(11,181,48);
+    --secendary-color: rgba(36,122,55,0.9);
+    --padding: 2px;
+    --transition: all 0.5s;
+    --border-radius: 4px;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    list-style-type: none;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+
+/*common reset code end here*/
+
+/* navbar starts here */
+nav{
+font-family: 'Times New Roman', Times, serif;
+font-size: 18px;
+position: sticky;
+top: 0;
+left: 0;
+z-index: 100;
+}
+.nav_upper{
+    min-height: 10vh;
+    background-color: rgb(11,181,48);
+    padding: 3px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav_list{
+    transition: 0.50s;
+}
+.nav_list:hover{
+    text-decoration: overline;
+    color: rgb(17, 8, 8);
+    
+}
+.nav_link{
+    color: white;
+    transition: 0.5px;
+}
+.nav_link:hover{
+    color: rgb(0, 0, 0);
+    
+}
+.img_icon{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: rgb(2, 99, 36) 2px solid;
+    filter: saturate(0);
+    transition: 0.3s;
+}
+.img_icon:hover{
+    filter: saturate(1);
+
+}
+.nav_lower{
+    min-height: 8vh;
+    background-color: rgb(106, 129, 22, 0.9);
+    padding: 3px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-lower-link{
+    color: white;
+    transition: 0.3px;
+}
+.nav-lower-link:hover{
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+.branding{
+    color: rgb(53, 6, 70);
+    font-size: 30px;
+}
+.branding:hover{
+    color: white;
+    text-decoration: underline;
+}
+/* navbar ends here */
+
+/* login starts here */
+
+
+.containar{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.input-box{
+    height: 50vh;
+    width: 60vh;
+    background-color: rgb(186, 169, 144);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px gray;
+    
+}
+
+
+.input-field{
+    background: #eaeeea;
+    margin: 15px 0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+
+.login-input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 1rem;
+    padding: 10px 15px;
+}
+
+.input-field i{
+    margin-left: 5px;
+    color: gray;
+}
+
+.sign-in{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+    color: rgb(255, 252, 248);
+    background-color: rgb(92, 92, 92);
+    border-radius: 10px;
+    padding: 3px;
+}
+.lost-pass{
+    margin-top: -15px;
+    font-size: 14px;
+}
+.reg-btn{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8px;
+}
+
+
+.reg-button{
+    height: 30px;
+    width: 100px;
+    background-color: gray;
+    border: 0;
+    outline: 0;
+    color: rgb(13, 13, 13);
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.reg-button:hover{
+    background-color: rgb(252, 252, 226);
+    text-decoration: underline;
+}
+
+.reg{
+    font-size: 13px;
+    margin-top: 2px;
+    display: flex;
+    justify-content: center;
+}
+
+/* login ends here */
+
+/* regestretion starts here */
+
+.containar{ 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-box-reg{
+    min-height: 50vh;
+    width: auto;
+    background-color: rgb(186, 169, 144);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px gray;
+
+}
+
+
+.input-field-reg{
+    background: #eaeeea;
+    margin: 15px 0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+
+.login-input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 1rem;
+    padding: 10px 15px;
+}
+
+.input-field-reg i{
+    margin-left: 5px;
+    color: gray;
+}
+
+.sign-up{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 15px;
+    color: rgb(255, 252, 248);
+    background-color: rgb(92, 92, 92);
+    border-radius: 10px;
+    padding: 3px;
+}
+.lost-pass{
+    margin-top: -15px;
+    font-size: 14px;
+}
+.login-btn{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8px;
+}
+
+
+.login-button{
+    height: 30px;
+    width: 70px;
+    background-color: gray;
+    border: 0;
+    outline: 0;
+    color: rgb(13, 13, 13);
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.login-button:hover{
+    background-color: rgb(252, 252, 226);
+    text-decoration: underline;
+}
+
+.reg{
+    font-size: 13px;
+    margin-top: 2px;
+}
+.a{
+    margin-left: 3px;
+    margin-right: 3px;
+    font-weight: bold;
+}
+
+
+/* regestretion ends here */
+
+/* product section stsrts here*/
+
+.products-section{
+    min-height: 100vh;
+    width: 100%;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar{
+    flex: 1;
+    gap: 15px;
+    flex-direction: column;
+    display: flex;
+    /* justify-content: center; */
+    padding: 3px;
+
+}
+.sidebar-sec{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.product{
+    flex: 3;
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.action-bar{
+    display: flex;
+    justify-content: space-around;
+}
+.sorting select{
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 2px;
+    border-radius: 4px;
+    border: 1px solid;
+}
+.sorting select:hover{
+    background-color: antiquewhite;
+}
+.search-action input{
+    padding: 2px;
+    border-radius: 4px;
+    border: 1px solid;
+    transition: 0.5s;
+}
+.search-action input:hover{
+    background-color: antiquewhite;
+}
+.search-action button{
+    margin-left: -3px;
+    border: 1px solid;
+    padding: 2px;
+    border-radius:4px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.search-action button:hover{
+    background-color: rgb(84, 137, 81);
+}
+
+.cart-sec1{
+    display: flex;
+    justify-content: space-around;
+    padding: 4px;
+    
+}
+.cart{
+    height: 20rem;
+    width: 15rem;
+    background-color: rgb(240, 240, 225);
+    box-shadow: 2px 2px 4px rgba(87, 87, 87, 0.521);
+    border-radius: 10px;
+    position: relative;
+    transition: 0.5s;
+}
+.cart:hover{
+    background-color: rgb(249, 249, 249);
+    box-shadow: 2px 2px 4px rgba(63, 63, 63, 0.991);
+}
+
+.badge{
+    background-color: green;
+    color: white;
+    padding: 5px 3px;
+    width: 5rem;
+    border-radius: 8px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+}
+.hr{
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.p-img{
+    filter: saturate(0);
+    padding: 5px;
+    height: 10.5rem;
+    transition: 0.5s;
+}
+.p-img:hover{
+    filter: saturate(1);;
+}
+.des-hr{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.cart h3{
+    padding: 5px;
+    margin-top: -4px;
+    height: 9vh;
+    
+}
+.p-des{
+    padding: 5px;
+}
+.description{
+    height: 4rem;
+}
+.cart-btn{
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+   
+}
+.cart-btn button{
+    width: 90%;
+    padding: 4px;
+    border-radius: 4px;
+    border: 1px solid;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.cart-btn button:hover{
+    background-color: rgb(241, 219, 189);
+}
+
+/* product section ends here*/
+
+/* contact start here */
+
+.contact{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.contact h1{
+    border: 2px solid;
+    padding: 5px;
+    border-radius: 10px;
+}
+.cont-box{
+    background-color: rgb(240, 240, 225);
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 17rem;
+    height: 17rem;
+    box-shadow: 2px 2px 4px rgba(87, 87, 87, 0.521);
+    border-radius: 10px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+.cont-box img{
+    height: 8rem;
+    width: 7rem;
+    border: 2px solid;
+    border-radius: 5px 20px;
+}
+.bio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+}
+
+.icon-btn{
+    border: 1px solid;
+    padding: 2px;
+    margin-left: 10px;
+    border-radius:4px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 1rem;
+}
+.icon-btn:hover{
+    background-color: rgb(84, 137, 81);
+}
+.icon-trush{
+    border: 1px solid;
+    padding: 2px;
+    margin-right: 10px;
+    border-radius:4px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 1rem;
+}
+.icon-trush:hover{
+    background-color: rgb(84, 137, 81);
+}
+    
+
+
+/* contact end here */
+
+/* footer starts here */
+.footer{
+    background-color: rgb(26, 154, 19);
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 15px;
+    color: white;
+}
+
+.flex{
+    border: none;
+    
+}
+.btn-subscribe{
+    margin-left: -4px;
+}
+/* footer ends here */
+
+@media (max-width: 992px) {
+    
+}
+@media (max-width: 768px){
+
+}
+@media (max-width: 600px){
+
+}

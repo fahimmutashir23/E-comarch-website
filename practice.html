@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is a demo project">
+    <title>FAHIM EXPRESS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="practice.css">
+    <link rel="shortcut icon" href="New folder/T2.png" type="image/x-icon">
+</head>
+<body>
+    <!-- navbar start here -->
+    <nav>
+        <ul class="nav_upper">
+            <li class="nav_list">
+                <a href="practice.html" class="nav_link">HOME</a>
+            </li>
+            <li class="nav_list">
+                <a href="regester.html" class="nav_link">REGESTER</a>
+            </li>
+            
+            <li class="nav_list">
+                <a href="login.html" class="nav_link">LOGIN</a>
+            </li>
+            <li class="nav_list">
+                <a href="practice.html" class="nav_link">LOGOUT</a>
+            </li>
+            <li class="nav_list">
+                <a href="contact.html" class="nav_link">CONTACT</a>
+            </li>
+            </li>
+            <li class="nav_list">
+                <a href="profile.html">
+                    <img class="img_icon" src="New folder/fahim.jpg" alt=""></a>
+            </li>
+
+        </ul>
+       
+        <ul class="nav_lower">
+            <li class="lower-nav_list">
+                <a href="practice.html" class="branding">FAHIM</a>
+            </li>
+            <li class="lower-nav_list">
+                <a href="cart.html" class="nav-lower-link">
+                    <span><i class="fa-solid fa-cart-shopping"></i></span>
+                shopping $123.03</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- navbar ends here -->
+
+    <!-- products section starts here -->
+    <main class="products-section">
+        <div class="sidebar">
+            <section class="sidebar-sec">
+                <h3>Catagoris</h3>
+                  <ul>
+                    <li>
+                        <label for="phons">
+                            <input type="checkbox" 
+                            name="phone" 
+                            id="phone" 
+                            value="phone">
+                            phone
+                        </label>
+                    </li>
+                    <li>
+                        <label for="laptop">
+                            <input type="checkbox" 
+                            name="laptop" 
+                            id="laptop" 
+                            value="laptop">
+                            Laptop
+                        </label>
+                    </li>
+                    <li>
+                        <label for="headphone">
+                            <input type="checkbox" 
+                            name="headphone" 
+                            id="headphone" 
+                            value="headphone">
+                            Headphone
+                        </label>
+                    </li>
+                    <li>
+                        <label for="cherger">
+                            <input type="checkbox" 
+                            name="cherger" 
+                            id="cherger" 
+                            value="cherger">
+                            cherger
+                        </label>
+                    </li>
+                    <li>
+                        <label for="teblet">
+                            <input type="checkbox" 
+                            name="teblet" 
+                            id="teblet" 
+                            value="teblet">
+                            teblet
+                        </label>
+                    </li>
+                    <li>
+                        <label for="monitor">
+                            <input type="checkbox" 
+                            name="monitor" 
+                            id="monitor" 
+                            value="monitor">
+                            monitor
+                        </label>
+                    </li>
+                  </ul>
+            </section>
+            <section class="sidebar-sec">
+                <h3>Price Range</h3>
+                  <ul>
+                    <li>
+                        <label for="price1">
+                            <input type="radio" 
+                            name="price" 
+                            id="price1" 
+                            value="0,20">
+                            0-20$
+                        </label>
+                    </li>
+                    <li>
+                        <label for="price2">
+                            <input type="radio" 
+                            name="price" 
+                            id="price2" 
+                            value="21,50">
+                            21-50$
+                        </label>
+                    </li>
+                    <li>
+                        <label for="price3">
+                            <input type="radio" 
+                            name="price" 
+                            id="price3" 
+                            value="51,100">
+                            51-100$
+                        </label>
+                    </li>
+                    <li>
+                        <label for="price4">
+                            <input type="radio" 
+                            name="price" 
+                            id="price4" 
+                            value="100,200">
+                            100-200$
+                        </label>
+                    </li>
+                    <li>
+                        <label for="price5">
+                            <input type="radio" 
+                            name="price" 
+                            id="price5" 
+                            value="201,300">
+                            201-300$
+                        </label>
+                    </li>
+                  </ul>
+            </section>
+            <section class="sidebar-sec">
+                <h3>Shipping Option</h3>
+                  <ul>
+                    <li>
+                        <label for="price1">
+                            <input type="radio" 
+                            name="price" 
+                            id="price1" 
+                            value="0,20">
+                            Offline delivery
+                        </label>
+                    </li>
+                    <li>
+                        <label for="price2">
+                            <input type="radio" 
+                            name="price" 
+                            id="price2" 
+                            value="laptop">
+                            Online delivery
+                        </label>
+                    </li>
+                    
+                  </ul>
+            </section>
+        </div>
+
+        <div class="product">
+            <section class="action-bar">
+                <div class="sorting">
+                    <label for="sort">Short by :</label>
+                    <select name="sort" id="sort">
+                        <option value="sold">most sold first</option>
+                        <option value="rating">most rated first</option>
+                        <option value="price">cheapest first</option>
+                        <option value="arrival">newest first</option>
+                        <option value="discount">biggest discount  first</option>
+                    </select>
+                </div>
+
+                <div class="search-action">
+                    <input type="text" placeholder="search your products">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </section>
+<!-- products starts -->
+            <section class="cart-sec1">
+                <div class="cart">
+                    <div class="badge">
+                        <span>in stock</span>
+                        <hr class="hr">
+                        <span>5 sold</span>
+                    </div>
+                    <img class="p-img" src="New folder/product 1.avif" alt="product1">
+                    <h3>Edifier K800 Gaming Headphone</h3>
+                    <hr class="des-hr">
+                    <div class="description">
+                        <p class="p-des">Lorem ipsum dolor sit amet 
+                            consectetur adipisicing elit.
+                            Recusandae..... <a href="product.html">learn more</a>
+                        </p>
+                    </div>
+                    <div class="cart-btn">
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div class="badge">
+                        <span>in stock</span>
+                        <hr class="hr">
+                        <span>5 sold</span>
+                    </div>
+                    <img class="p-img" src="New folder/product 2.jpg" alt="product1">
+                    <h3>ThinkPad T15 Gen 2 (15" Intel)</h3>
+                    <hr class="des-hr">
+                    <div class="description">
+                        <p class="p-des">Lorem ipsum dolor sit amet 
+                            consectetur adipisicing elit.
+                            Recusandae..... <a href="product.html">learn more</a>
+                        </p>
+                    </div>
+                    <div class="cart-btn">
+                        <button>Add to cart</button>
+                    </div>
+                    
+                </div>
+                <div class="cart">
+                    <div class="badge">
+                        <span>in stock</span>
+                        <hr class="hr">
+                        <span>5 sold</span>
+                    </div>
+                    <img class="p-img" src="New folder/product 3.webp" alt="product1">
+                    <h3>HP Laptop 15-dw3010no (5U000EA)</h3>
+                    <hr class="des-hr">
+                    <div class="description">
+                        <p class="p-des">Lorem ipsum dolor sit amet 
+                            consectetur adipisicing elit.
+                            Recusandae..... <a href="product.html">learn more</a>
+                        </p>
+                    </div>
+                    <div class="cart-btn">
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cart-sec1">
+                <div class="cart">
+                    <div class="badge">
+                        <span>in stock</span>
+                        <hr class="hr">
+                        <span>5 sold</span>
+                    </div>
+                    <img class="p-img" src="New folder/product 4.webp" alt="product1">
+                    <h3>HP Pavilion x360 2-in-1 Laptop 14-ek0137TU</h3>
+                    <hr class="des-hr">
+                    <div class="description">
+                        <p class="p-des">Lorem ipsum dolor sit amet 
+                            consectetur adipisicing elit.
+                            Recusandae..... <a href="product.html">learn more</a>
+                        </p>
+                    </div>
+                    <div class="cart-btn">
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div class="badge">
+                        <span>in stock</span>
+                        <hr class="hr">
+                        <span>5 sold</span>
+                    </div>
+                    <img class="p-img" src="New folder/product 5.jpg" alt="product1">
+                    <h3>Samsung Galaxy S20 5G h3</h3>
+                    <hr class="des-hr">
+                    <div class="description">
+                        <p class="p-des">Lorem ipsum dolor sit amet 
+                            consectetur
+                            Recusandae..... <a href="product.html">learn more</a>
+                        </p>
+                    </div>
+                    <div class="cart-btn">
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div class="badge">
+                        <span>in stock</span>
+                        <hr class="hr">
+                        <span>5 sold</span>
+                    </div>
+                    <img class="p-img" src="New folder/product 6.jpg" alt="product1">
+                    <h3>Oppo F17 Pro</h3>
+                    <hr class="des-hr">
+                    <div class="description">
+                        <p class="p-des">Lorem ipsum dolor sit amet 
+                            consectetur adipisicing elit.
+                            Recusandae..... <a href="product.html">learn more</a>
+                        </p>
+                    </div>
+                    <div class="cart-btn">
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cart-sec1">
+                <div class="cart">
+                    <div class="badge">
+                        <span>in stock</span>
+                        <hr class="hr">
+                        <span>5 sold</span>
+                    </div>
+                    <img class="p-img" src="New folder/product 7.jpg" alt="product1">
+                    <h3>Edifier K800 Gaming Headphone</h3>
+                    <hr class="des-hr">
+                    <div class="description">
+                        <p class="p-des">Lorem ipsum dolor sit amet 
+                            consectetur adipisicing elit.
+                            Recusandae..... <a href="product.html">learn more</a>
+                        </p>
+                    </div>
+                    <div class="cart-btn">
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div class="badge">
+                        <span>in stock</span>
+                        <hr class="hr">
+                        <span>5 sold</span>
+                    </div>
+                    <img class="p-img" src="New folder/product 8.jpg" alt="product1">
+                    <h3>Edifier K800 Gaming Headphone</h3>
+                    <hr class="des-hr">
+                    <div class="description">
+                        <p class="p-des">Lorem ipsum dolor sit amet 
+                            consectetur adipisicing elit.
+                            Recusandae..... <a href="product.html">learn more</a>
+                        </p>
+                    </div>
+                    <div class="cart-btn">
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div class="badge">
+                        <span>in stock</span>
+                        <hr class="hr">
+                        <span>5 sold</span>
+                    </div>
+                    <img class="p-img" src="New folder/product 9.jpg" alt="product1">
+                    <h3>Edifier K800 Gaming Headphone</h3>
+                    <hr class="des-hr">
+                    <div class="description">
+                        <p class="p-des">Lorem ipsum dolor sit amet 
+                            consectetur adipisicing elit.
+                            Recusandae..... <a href="product.html">learn more</a>
+                        </p>
+                    </div>
+                    <div class="cart-btn">
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- products ends -->
+    <!-- products section ends here -->
+
+    <!-- footer stats here -->
+    <footer class="footer">
+        <div class="flex">
+            <label for="subscribe">Subscribe to newslater</label>
+            <input type="email"
+            id="subscribe"
+            name="subscribe"
+            class="input-fild"
+            placeholder="your email address"
+            >
+            <button class="btn btn-subscribe">Subscribe</button>
+        </div>
+        <div>
+            <p>&copy; copyright 2023 FAHIM</p>
+        </div>
+    </footer>
+    <!-- footer ends here -->
+</body>
+</html>
